@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Przerwa z Kulturą</title>
+</head>
+
+
+<body>
+<center>
+	<header> 
+		<img id="logo" src="logo.png" alt="logo_kółka">
+		<a href="dokumenty/regulamin.pdf" target="_blank">Regulamin</a>
+		<h1>Przerwa z Kulturą</h1>
+	</header>
+	
+	<div class="row">
+		<img src="kultura.png" alt="grafika popkultura">
+	</div>
+	
+	<div class="row" id="cytat">
+	<h1><br>"Kultura wyzwala ciało od zniewolenia pracą i usposabia go do kontemplacji." -Umberto Eco</h1><br>	
+	</div>
+	
+	
+	<div class="col-lg-4 col-md-6 col-sm-12">
+		<p>
+		<div class="karta">
+			<div class="info">
+			
+			<strong>Co zrobłyśmy?</strong>
+			</div>
+			<br><br>
+			<strong>Maratony filmowe<br>
+			Spotkania/ videorozmowy<br>
+			Skrzynka pomysłów<br><br></strong>
+		</div>
+	</div>
+
+
+	<div class="col-lg-4 col-md-6 col-sm-12">
+	<p>
+		<div class="karta">
+			<div class="info">
+			<strong>Co planujemy zrobić?</strong>
+			</div>
+		<br><br>
+		<strong>Festiwal muzyki<br>
+		Zbiórka mang w szkole<br>
+		Integracje poza szkolne<br><br></strong>
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-md-6 col-sm-12">
+	<p>
+		<div class="karta">
+			<div class="info">
+			<strong>Jak do nas dołaczyć?</strong>
+			</div>
+		<br><br>
+		<strong>Podejść do naszej sali (207)<br>
+		Zapytac wprost ( klasa 1pf)<br>
+		Napisz do nas na social media (facebook, instagram, twitter)</strong>
+<p>
+		</div>
+		
+	</div>
+<p><h2><span class="przycisk" >>> ></span><a href="dokumenty/kontakt.html" target="_blank">Kontakt z nami</a></h2>
+<p><h2><span class="przycisk" >>> ></span><a href="dokumenty/zdjęcia.html" target="_blank">Zdjęcia</a></h2>
+
+<script>
+function spr(){
+//
+var odpa = document.getElementById("odpa").checked;
+var odpb = document.getElementById("odpb").checked;
+var odpc = document.getElementById("odpc").checked;
+
+//
+console.log(odpa,odpb,odpc);
+
+//
+if (odpc == true) odp  = "dobrze";
+else odp = "źle";
+
+//
+document.getElementById("wynik").innerHTML = "<br>" + odp;
+}
+</script>
+
+<div id="test">
+<h2>Ile koncertów popowych odbyło się w Polsce w roku 2019?</h2>
+
+<h3><input type="radio" name="wybory" value="A" id="odpa"> 82<br>
+<input type="radio" name="wybory" value="B" id="odpb"> 35<br>
+<input type="radio" name="wybory" value="C" id="odpc"> 60<br></h3>
+<br>
+<button onclick="spr()">Sprawdź</button>
+<div id="wynik"></div>
+</div>
+<footer>
+<h1>Dołącz do nas już dziś! Zapraszamy</h1>
+<div class="koniec"></div>
+<script>
+document.write("Nazywamy się <strong>Alicja, Chloe, Oliwia i Alicja</strong>. Jesteśmy autorkami tej strony.")
+</script>
+</footer>
+</center>
+</body>
+</html>

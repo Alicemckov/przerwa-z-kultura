@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie 4 - test</title>
+</head>
+<body>
+<script>
+function spr(){
+//
+var odpa = document.getElementById("odpa").checked;
+var odpb = document.getElementById("odpb").checked;
+var odpc = document.getElementById("odpc").checked;
+
+//
+console.log(odpa,odpb,odpc);
+
+//
+if (odpc == true) odp  = "dobrze";
+else odp = "źle";
+
+//
+document.getElementById("wynik").innerHTML = "<br>" + odp;
+}
+</script>
+
+<div id="test">
+<h3>Ile pomników Janusza Korczaka znajduje się w Warszawie</h3>
+
+<input type="radio" name="wybory" value="A" id="odpa"> 10<br>
+<input type="radio" name="wybory" value="B" id="odpb"> 5<br>
+<input type="radio" name="wybory" value="C" id="odpc"> 3<br>
+<br>
+<button onclick="spr()">Sprawdź</button>
+<div id="wynik"></div>
+</div>
+
+</body>
+</html>
